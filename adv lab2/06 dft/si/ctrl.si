@@ -1,0 +1,22 @@
+VERS    LM:7 ASA:7 FP:7
+IO      SHOW=f HELP=F VERBOS=41,40 WKP=F IACTIV=0
+CONST   a=10.26 bzj=0
+        nk=12 nkgw=4 nkgw2=nkgw
+        nit=120 nsp=1
+STRUC   NBAS=2 NSPEC=1 NL=4
+        ALAT=a PLAT= 0 .5 .5  .5 0 .5  .5 .5 0
+SITE    ATOM=Si  POS=  0   0    0
+        ATOM=Si  POS= 1/4  1/4  1/4
+SYMGRP  i*r3(1,1,-1):(1/4,1/4,1/4) r4x:(1/4,1/4,1/4)
+STR     RMAX=3.5
+HAM     QASA=3
+        FORCES=0 ELIND=-1 XCFUN=2 GGA=0 TOL=1d-6 GMAX=13
+        NSPIN=nsp REL=t INVIT=f HF=0 SO=0
+ITER    MIX=A3,b=.5,k=5 CONV=1e-6 CONVC=1e-6 NIT=nit
+BZ      NKABC=nk nk nk BZJOB=bzj EF0=0 DELEF=.1 EFMAX=2
+        TETRA=1 METAL=3 SAVDOS=T INVIT=f PUTQP=f
+SPEC    ATOM=Si Z=14 R=2.22 A=0.015 EREF=-577.640887
+        LMX=2 LMXA=4
+        RSMH= 1.71 1.677 1.71 EH= -0.3 -0.3 -0.3
+        RSMH2= 1.71 1.677 EH2= -1.1 -1.1 
+        P= 3.867 3.808 3.451 4.13 5.102
