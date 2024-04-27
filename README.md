@@ -1,4 +1,4 @@
-# advance physics laboratory course
+# undergraduate advanced physics laboratory course
 All labs doing during the course:
 1. Measuring $k_B$ from resistors
 2. Four-Point-Probe Conductivity Measurement
